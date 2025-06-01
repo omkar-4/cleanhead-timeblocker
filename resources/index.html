@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<title>NeutralinoJs sample app</title>
+		<link rel="shortcut icon" href="#" type="image/x-icon" />
+		<link rel="stylesheet" href="/styles.css" />
+	</head>
+	<body>
+		<!-- Design Architecture
+
+    #neutralinoapp
+      #main-screen
+        #date-bar
+          #prev-day
+          #current-date
+          #next-day
+        #time-blocks
+    
+    -->
+
+		<div id="neutralinoapp">
+			<div id="main-screen">
+				<h1>Time Blocker</h1>
+				<div id="date-bar">
+					<button id="prev-day">&lt;</button>
+					<span id="current-date"></span>
+					<button id="next-day">&gt;</button>
+				</div>
+				<div id="time-blocks"></div>
+			</div>
+		</div> 
+
+
+    
+
+		<!-- Neutralino.js client. This file is gitignored, 
+        because `neu update` typically downloads it.
+        Avoid copy-pasting it.
+        -->
+		<script src="/js/neutralino.js"></script>
+
+		<!-- Your app's source files -->
+		<script src="/js/main.js"></script>
+    <script src="/js/logic.js"></script>
+	</body>
+</html>
